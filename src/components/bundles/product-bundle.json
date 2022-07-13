@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_bundles_product_bundles",
+  "info": {
+    "displayName": "Product Bundle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "discount": {
+      "type": "float"
+    },
+    "optional": {
+      "type": "boolean"
+    },
+    "min_quantity": {
+      "type": "integer"
+    },
+    "max_quantity": {
+      "type": "integer"
+    },
+    "default_quantity": {
+      "type": "integer"
+    },
+    "price_idnividually": {
+      "type": "boolean"
+    }
+  }
+}
