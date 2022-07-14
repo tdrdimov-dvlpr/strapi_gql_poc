@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "singularName": "room",
+    "pluralName": "rooms",
+    "displayName": "Rooms",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roomId": {
+      "type": "integer"
+    },
+    "mongo_id": {
+      "type": "integer"
+    },
+    "st_permissions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::st-permission.st-permission",
+      "mappedBy": "room"
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "end_date": {
+      "type": "datetime"
+    },
+    "is_membership": {
+      "type": "boolean"
+    }
+  }
+}
